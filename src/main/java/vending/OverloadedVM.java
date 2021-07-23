@@ -7,6 +7,8 @@ public class OverloadedVM {
     int softDrinkQty;
     int saltySnacksQty;
     int chocolatesQty;
+    int itemMax =3;
+    int items= 3;
 
     OverloadedVM(int softDrinkQty, int saltySnacksQty, int chocolatesQty){
 
@@ -66,8 +68,26 @@ public class OverloadedVM {
 
     int getStock(){
         int total = saltySnacksQty + softDrinkQty + chocolatesQty;
+        System.out.println("There are: " + total + " items");
         return total;
+
     }
+
+
+//     void buy (int saltySnacks, int softDrinks, int chocolates ){
+//        System.out.println("You bought "+ saltySnacks + " saltySnack(s)");
+//         System.out.println("You bought "+ softDrinks + " softDrink(s)");
+//         System.out.println("You bought "+ chocolates + " chocolate(s)");
+//
+//    }
+//
+//    void addStock(int saltySnacks, int softDrinks, int chocolates ){
+//
+//        System.out.println("You added "+ saltySnacks + " saltySnack(s)");
+//        System.out.println("You added "+ softDrinks + " softDrink(s)");
+//        System.out.println("You added "+ chocolates + " chocolate(s)");
+//
+//    }
 
     }
 
