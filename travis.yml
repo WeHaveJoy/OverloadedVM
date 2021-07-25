@@ -1,4 +1,4 @@
-language: java
-
-script:
-  - mvn flyway:migrate test -B
+language: ruby
+rvm:
+  - 2.2
+  - jruby
