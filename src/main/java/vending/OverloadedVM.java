@@ -68,26 +68,40 @@ public class OverloadedVM {
 
     int getStock(){
         int total = saltySnacksQty + softDrinkQty + chocolatesQty;
-        System.out.println("There are: " + total + " items");
+        System.out.println( total );
         return total;
 
     }
 
 
-//     void buy (int saltySnacks, int softDrinks, int chocolates ){
-//        System.out.println("You bought "+ saltySnacks + " saltySnack(s)");
-//         System.out.println("You bought "+ softDrinks + " softDrink(s)");
-//         System.out.println("You bought "+ chocolates + " chocolate(s)");
-//
-//    }
-//
-//    void addStock(int saltySnacks, int softDrinks, int chocolates ){
-//
-//        System.out.println("You added "+ saltySnacks + " saltySnack(s)");
-//        System.out.println("You added "+ softDrinks + " softDrink(s)");
-//        System.out.println("You added "+ chocolates + " chocolate(s)");
-//
-//    }
+     void buy (Product product, int productNum ){
+       if(product instanceof  SoftDrink && (softDrinkQty - productNum)> 0){
+           softDrinkQty--;
+       }
+
+         if(product instanceof  SaltySnack && (saltySnacksQty - productNum)> 0){
+             saltySnacksQty--;
+         }
+
+         if(product instanceof  Chocolate && (chocolatesQty - productNum)> 0){
+             chocolatesQty--;
+         }
+
+    }
+
+    void addStock(Product product, int productNum ){
+        if(product instanceof  SoftDrink){
+            softDrinkQty += productNum;
+        }
+
+        if(product instanceof  SaltySnack){
+            saltySnacksQty += productNum;
+        }
+
+        if(product instanceof  Chocolate){
+            chocolatesQty += productNum;
+        }
+    }
 
     }
 

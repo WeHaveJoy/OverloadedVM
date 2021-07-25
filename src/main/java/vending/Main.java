@@ -13,8 +13,8 @@ public class Main {
         Chocolate c = new Chocolate();
         Product p = new Product();
 
-        o.buy(2,1,3);
-        o.addStock(4,1,1);
+       o.buy(s, 1);
+       o.addStock(c,2);
 
 //        o.buy(s);
 //        o.addStock(s);
