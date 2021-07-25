@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/WeHaveJoy/OverloadedVM.svg?branch=master)](https://travis-ci.org/WeHaveJoy/OverloadedVM)
+[![Build Status](https://www.travis-ci.com/WeHaveJoy/OverloadedVM.svg?branch=master)](https://www.travis-ci.com/WeHaveJoy/OverloadedVM)
