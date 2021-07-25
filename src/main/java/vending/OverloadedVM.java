@@ -7,8 +7,6 @@ public class OverloadedVM {
     int softDrinkQty;
     int saltySnacksQty;
     int chocolatesQty;
-    int itemMax =3;
-    int items= 3;
 
     OverloadedVM(int softDrinkQty, int saltySnacksQty, int chocolatesQty){
 
@@ -20,37 +18,52 @@ public class OverloadedVM {
 
     void buy(SoftDrink softdrink){
 
-        System.out.println("buy 1 SoftDrink");
+        softDrinkQty -= 1;
+//        System.out.println("buy 1 SoftDrink");
     }
 
     void buy(SaltySnack saltySnack){
 
-        System.out.println("buy 1 SaltySnack");
+        saltySnacksQty -= 1;
+//        System.out.println("buy 1 SaltySnack");
     }
 
     void buy(Chocolate chocolate){
-        System.out.println("buy 1 Chocolate");
+
+        chocolatesQty -= 1;
+//        System.out.println("buy 1 Chocolate");
     }
 
     void buy(Product product){
-
-        System.out.println("buy 1 of each product");
+        softDrinkQty -= 1;
+        saltySnacksQty -= 1;
+        chocolatesQty -= 1;
+//        System.out.println("buy 1 of each product");
     }
 
 
     void addStock(SoftDrink softdrink){
-        System.out.println("add 1 SoftDrink");
+        softDrinkQty += 1;
+//        System.out.println("add 1 SoftDrink");
     }
 
     void addStock(SaltySnack saltySnack){
-        System.out.println("add 1 SaltySnack");
+
+        saltySnacksQty += 1;
+//        System.out.println("add 1 SaltySnack");
     }
 
     void addStock(Chocolate chocolate){
-        System.out.println("add 1 Chocolate");
+
+        chocolatesQty += 1;
+//        System.out.println("add 1 Chocolate");
     }
 
     void addStock(Product product){
+
+        softDrinkQty += 1;
+        saltySnacksQty += 1;
+        chocolatesQty += 1;
         System.out.println("add 3 stock items for each Product type.");
     }
 
