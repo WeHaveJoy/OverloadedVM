@@ -1,1 +1,0 @@
-[![Build Status](https://www.travis-ci.com/WeHaveJoy/OverloadedVM.svg?branch=master)](https://www.travis-ci.com/WeHaveJoy/OverloadedVM)
