@@ -1,4 +1,4 @@
-package vending;
+package vendingException;
 
 import vending.products.Product;
 

@@ -1,6 +1,5 @@
-package vending;
+package vendingException;
 
-import vending.products.Chocolate;
 import vending.products.Product;
 
 public class ChocolatesOutOfStockException extends ProductNotFoundException {

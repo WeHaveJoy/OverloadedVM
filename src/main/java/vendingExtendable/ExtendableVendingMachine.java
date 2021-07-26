@@ -1,13 +1,12 @@
-package vending;
+package vendingExtendable;
 
 import vending.products.*;
 
 public class ExtendableVendingMachine {
-
-    int softDrinkQty;
-    int saltySnacksQty;
-    int chocolatesQty;
-    int biltongQty;
+    public  int softDrinkQty;
+    public   int saltySnacksQty;
+    public   int chocolatesQty;
+    public  int biltongQty;
 
     ExtendableVendingMachine(int softDrinkQty, int saltySnacksQty, int chocolatesQty, int biltongQty){
 

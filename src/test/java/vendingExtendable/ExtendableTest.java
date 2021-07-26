@@ -1,10 +1,11 @@
-package vending;
+package vendingExtendable;
 
 import org.junit.Test;
 import vending.products.Biltong;
 import vending.products.Chocolate;
 import vending.products.SaltySnack;
 import vending.products.SoftDrink;
+import vendingExtendable.ExtendableVendingMachine;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

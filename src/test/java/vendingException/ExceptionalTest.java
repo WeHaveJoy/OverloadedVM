@@ -1,4 +1,4 @@
-package vending;
+package vendingException;
 
 import org.junit.Test;
 import vending.products.Biltong;

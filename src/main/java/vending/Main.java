@@ -2,6 +2,7 @@ package vending;
 
 
 import vending.products.SoftDrink;
+import vendingExtendable.ExtendableVendingMachine;
 
 public class Main {
     public static void main(String[] args) {

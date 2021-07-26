@@ -1,4 +1,4 @@
-package vending;
+package vendingException;
 
 public class ProductNotFoundException extends Exception {
 
