@@ -44,27 +44,21 @@ public class OverloadedVM {
 
     void addStock(SoftDrink softdrink){
         softDrinkQty += 1;
-//        System.out.println("add 1 SoftDrink");
     }
 
-    void addStock(SaltySnack saltySnack){
-
-        saltySnacksQty += 1;
-//        System.out.println("add 1 SaltySnack");
+    void addStock(SaltySnack saltysnack){
+        softDrinkQty += 1;
     }
 
     void addStock(Chocolate chocolate){
-
-        chocolatesQty += 1;
-//        System.out.println("add 1 Chocolate");
+        softDrinkQty += 1;
     }
 
     void addStock(Product product){
-
         softDrinkQty += 1;
         saltySnacksQty += 1;
         chocolatesQty += 1;
-        System.out.println("add 3 stock items for each Product type.");
+//        System.out.println("add 3 stock items for each Product type.");
     }
 
     int getStock(SoftDrink softdrink){
@@ -87,36 +81,38 @@ public class OverloadedVM {
     }
 
 
-     void buy (Product product, int productNum ){
-       if(product instanceof  SoftDrink && (softDrinkQty - productNum)> 0){
-           softDrinkQty--;
+     void buy (Product product, int qty ){
+       if(product instanceof  SoftDrink && (softDrinkQty - qty)> 0){
+           softDrinkQty -= qty;
        }
 
-         if(product instanceof  SaltySnack && (saltySnacksQty - productNum)> 0){
-             saltySnacksQty--;
+         if(product instanceof  SaltySnack && (saltySnacksQty - qty)> 0){
+             saltySnacksQty -= qty;
          }
 
-         if(product instanceof  Chocolate && (chocolatesQty - productNum)> 0){
-             chocolatesQty--;
+         if(product instanceof  Chocolate && (chocolatesQty - qty)> 0){
+             chocolatesQty -= qty;
          }
 
     }
 
-    void addStock(Product product, int productNum ){
+
+    void addStock(Product product, int qty ){
         if(product instanceof  SoftDrink){
-            softDrinkQty += productNum;
+            softDrinkQty += qty;
         }
 
         if(product instanceof  SaltySnack){
-            saltySnacksQty += productNum;
+            saltySnacksQty += qty;
         }
 
         if(product instanceof  Chocolate){
-            chocolatesQty += productNum;
+            chocolatesQty += qty;
         }
     }
 
     }
+
 
 
 

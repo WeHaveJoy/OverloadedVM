@@ -22,18 +22,13 @@ public class OverloadedTest {
 
 
     @Test
-    public void shouldBeAbleToAdd3ProductsOnly() {
+    public void shouldBeAbleToAdd6ProductsOnly() {
 
-        OverloadedVM o = new OverloadedVM(2,1,2);
-        SoftDrink softdrink = new SoftDrink();
-        SaltySnack saltysnack = new SaltySnack();
-        Chocolate chocolate = new Chocolate();
+        OverloadedVM o = new OverloadedVM(0,0,0);
         Product product = new Product();
-        o.addStock(softdrink);
-        o.addStock(saltysnack);
-        o.addStock(chocolate);
         o.addStock(product);
-        assertEquals(5, o.getStock());
+        o.addStock(product);
+        assertEquals(6, o.getStock());
     }
 
 
@@ -47,7 +42,7 @@ public class OverloadedTest {
         o.buy(softdrink);
         o.buy(saltysnack);
         o.buy(chocolate);
-        assertEquals(3, o.getStock());
+        assertEquals(0, o.getStock());
     }
 
     @Test
@@ -94,4 +89,5 @@ public class OverloadedTest {
 
         assertEquals(2, o.getStock());
     }
+
 }
